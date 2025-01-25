@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+body {
+    font-family: 'Fira Code', monospace;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Fundo preto muito escuro */
+    color: #BEBEBE; /* Texto principal em cinza claro */
+}
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.header img {
+    width: 200px;  /* Definindo uma largura fixa */
+    height: 200px; /* Definindo a mesma altura */
+    border-radius: 8px; /* Arredondando as bordas */
+}
+.header-text {
+    flex: 1;
+    max-width: 70%;
+}
+.header-text h2 {
+    margin: 0;
+    color: #A6E22E; /* Título em verde claro */
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+ul.technologies, ul.certificates, ul.courses, ul.github-repos {
+    padding-left: 1.5rem;
+}
+ul.technologies li, ul.certificates li, ul.courses li, ul.github-repos li {
+    position: relative;
+    padding-left: 1.5rem;
+    color: #BEBEBE; /* Texto dos itens */
+}
+ul.technologies li::before, ul.certificates li::before, ul.courses li::before, ul.github-repos li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #A6E22E; /* Ponto verde claro */
+}
+h2 {
+    color: #66D9EF; /* Títulos em azul claro */
+    font-size: 1.8rem; /* Tamanho aumentado */
+    margin-bottom: 1rem;
+}
+.certificates, .courses, .github-repos {
+    margin-bottom: 1rem;
+}
+a {
+    color: #BEBEBE; /* Links em amarelo */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+a:hover {
+    color: #A6E22E; /* Cor verde claro ao passar o mouse */
+}
+p {
+    background: #2D2D2D; /* Fundo para parágrafos em cinza médio */
+    padding: 0.8rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #BEBEBE; /* Texto claro no parágrafo */
+    white-space: pre-wrap;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #2D2D2D; /* Fundo cinza médio no rodapé */
+    color: #BEBEBE; /* Texto claro no rodapé */
+    margin-top: 2rem;
+}
+.contato {
+    font-size: 1rem;
+    color: #A6E22E; /* Cor verde claro */
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #A6E22E; /* Linha verde clara */
+    padding-bottom: 1rem;
+    flex-wrap: wrap;
+}
+.contato span {
+    display: inline-block;
+    margin-right: 1rem;
+}
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    color: #BEBEBE;
+    margin-bottom: 2rem;
+}
+
+.contact-info a {
+    font-size: 1rem;
+}

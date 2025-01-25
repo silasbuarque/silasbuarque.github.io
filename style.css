@@ -25,6 +25,7 @@ body {
     border-radius: 8px; /* Arredondando as bordas */
 }
 .header-text {
+    text-align: justify;
     flex: 1;
     max-width: 70%;
 }
@@ -106,4 +107,27 @@ footer {
 
 .contact-info a {
     font-size: 1rem;
+}
+.education-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem; /* Reduzindo o espaçamento entre os itens */
+    margin-bottom: 0.5rem; /* Reduzindo o espaço entre as divs */
+}
+
+.education-title, .education-text {
+    color: #BEBEBE; /* Cor do texto */
+    font-size: 1rem; /* Tamanho reduzido do texto */
+    margin: 0; /* Removendo a margem entre os elementos */
+    text-align: left;
+    flex: 1;
+}
+
+.education-title {
+    color: #A6E22E; /* Cor verde clara para os títulos */
+    font-size: 1.2rem; /* Ajustando o tamanho do título */
+}
+
+.education-text {
+    font-size: 1rem; /* Tamanho do texto normal */
 }
